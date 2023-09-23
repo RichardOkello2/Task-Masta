@@ -13,22 +13,22 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Favicon -->
     <link rel="icon" href="res/favicon.svg">
-    <title>Todo List | By Abdellatif Laghjaj</title>
+    <title>Task Master</title>
 </head>
 <body>
 
     <!-- Copyright -->
     <div class="author-text">
-        <p>Made with ❤️ by <a href="https://github.com/abdellatif-laghjaj" target="_blank"><b>Abdellatif Laghjaj</b></a></p>
+        <p>Developed by Okello Richard @ 2023</p>
     </div>
     
     <div class="container">
         <header>
-            <h1>Todo List</h1>
+            <h1>Task Master</h1>
             <!-- Error message -->
             <div class="alert-message"></div>
             <div class="input-section">
-                <input type="text" placeholder="Add a todo . . ." class="input input-bordered input-secondary w-full max-w-xs" />
+                <input type="text" placeholder="Add task ..." class="input input-bordered input-secondary w-full max-w-xs" />
                 <input type="date" class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
                 <button class="btn btn-secondary add-task-button">
                     <i class="bx bx-plus bx-sm"></i>
@@ -38,7 +38,7 @@
 
         <div class="todos-filter">
             <div class="dropdown">
-                <label tabindex="0" class="btn m-1">Filter</label>
+                <label tabindex="0" class="btn m-1">Sort</label>
                 <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                     <li onclick="filterTodos('all')"><a>All</a></li>
                     <li onclick="filterTodos('pending')"><a>Pending</a></li>
@@ -67,7 +67,7 @@
 
     <!--Theme switcher-->
     <div class="theme-switcher">
-        <div class="dropdown dropdown-left">
+        <div class="dropdown dropdown-center">
             <label tabindex="0" class="btn m-1">
                 <i class='bx bxs-palette bx-sm'></i>
             </label>
