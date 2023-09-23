@@ -122,7 +122,7 @@ function showAlertMessage(message, type) {
 function deleteTodo(id) {
   todos = todos.filter((todo) => todo.id !== id);
   saveToLocalStorage();
-  showAlertMessage("Todo deleted successfully", "success");
+  showAlertMessage("Task deleted successfully", "success");
   showAllTodos();
 }
 
@@ -135,7 +135,7 @@ function editTodo(id) {
   saveToLocalStorage();
   add_btn.addEventListener("click", () => {
     add_btn.innerHTML = "<i class='bx bx-plus bx-sm'></i>";
-    showAlertMessage("Todo updated successfully", "success");
+    showAlertMessage("Task updated successfully", "success");
   });
 }
 
@@ -144,10 +144,10 @@ function clearAllTodos() {
   if (todos.length > 0) {
     todos = [];
     saveToLocalStorage();
-    showAlertMessage("All todos cleared successfully", "success");
+    showAlertMessage("All tasks cleared successfully", "success");
     showAllTodos();
   } else {
-    showAlertMessage("No todos to clear", "error");
+    showAlertMessage("No task to clear", "error");
   }
 }
 
